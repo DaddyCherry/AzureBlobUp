@@ -39,7 +39,6 @@ def upload_blob(connect_str, filename):
 def main():
     file_path = pyperclip.paste()
     filename = file_path.replace(' ', '_')
-    # os.rename(latest_file, filename)
     print('filename=', filename)
 
     key_vault_url = 'https://delivery.vault.azure.net/'
